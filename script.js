@@ -52,17 +52,17 @@ console.log(getRow(input)); // 1zyx 2ba dc
 
 // ---------------------------------------- //
 
-// function getProperty<T extends Record<string, any>, K extends keyof T>(
-//   obj: T,
-//   key: K
-// ): T[K] {
-//   return obj[key];
-// }
+function getProperty<T extends Record<string, any>, K extends keyof T>(
+   obj: T,
+   key: K
+ ): T[K] {
+   return obj[key];
+ }
 
-// console.log(getProperty(X, "a"));
-// console.log(getProperty(X, "m"));
+console.log(getProperty(X, "a"));
+console.log(getProperty(X, "m"));
 
-// type Concat<T extends unknown[], U extends unknown[]> = [...T, ...U];
+type Concat<T extends unknown[], U extends unknown[]> = [...T, ...U];
 
 // ---------------------------------------- //
 
