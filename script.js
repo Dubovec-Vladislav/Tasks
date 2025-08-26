@@ -55,7 +55,7 @@ console.log(getRow(input)); // 1zyx 2ba dc
 const X = { a: 1, b: 2, c: 3, d: 4 };
 
 function getProperty(obj, key) { 
-  return obj [key];
+  return obj[key];
 }
 
 function getProperty<T extends Record<string, any>, K extends keyof T>(
