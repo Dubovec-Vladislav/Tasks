@@ -84,6 +84,18 @@ const f2 = (row) => {
   return resultObject;
 };
 
+const f2 = (string) => {
+  const keys = string.split(".")
+  let result = {}
+  const reversedKeys = keys.reverse()
+  reversedKeys.forEach((key) => {
+    result = {
+      [key]: { ...result },
+    }
+  })
+  return result
+}
+
 console.log(f2("a.b.c.d.e")); // { a: { b: { c: { d: { e: {} } } } } };
 
 const customAll = async (promises) => {
