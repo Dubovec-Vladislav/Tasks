@@ -27,8 +27,8 @@ const copiedArray = deepArrayCopy(originalArray);
 copiedArray[1][1] = 9;
 copiedArray[1][2][0] = 16;
 
-console.log(originalArray);
-console.log(copiedArray);
+console.log(originalArray); // [1, [2, 3, [4, 5]], 6]
+console.log(copiedArray);   // [1, [2, 9, [16, 5]], 6]
 
 // ---------------------------------------- //
 
